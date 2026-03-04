@@ -179,6 +179,8 @@ Referência de UX: docs estilo Next.js
 - Navegar para a seção correspondente ao selecionar resultado
 - Suportar atalho `Ctrl/Cmd + K` para focar/abrir busca
 
+Para especificação completa do componente de search (arquitetura, fuzzy scoring, acessibilidade, erros comuns), consultar: `.github/prompts/styleguide_search.prompt.md`
+
 ---
 
 ## 8) Criar página principal do styleguide
