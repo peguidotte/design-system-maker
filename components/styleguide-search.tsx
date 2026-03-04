@@ -351,7 +351,7 @@ export function StyleguideSearch() {
                       onClick={() => goTo(item.href)}
                       onMouseEnter={() => setActiveIdx(idx)}
                       data-active={idx === activeIdx || undefined}
-                      className="group flex w-full items-start gap-3 rounded-md px-3 py-2.5 text-left transition-colors data-active:bg-primary data-active:text-primary-foreground"
+                      className="group flex w-full items-start gap-3 rounded-md px-3 py-2.5 text-left text-foreground transition-colors data-active:bg-primary data-active:text-primary-foreground"
                     >
                       <ItemIcon type={item.type} />
                       <div className="min-w-0 flex-1">

@@ -30,7 +30,7 @@
   --info: 214 88% 53%;
   --info-foreground: 0 0% 100%;
   --warning: 40 95% 48%;
-  --warning-foreground: 222 47% 11%;
+  --warning-foreground: 0 0% 100%;
   --error: 2 76% 55%;
   --error-foreground: 0 0% 100%;
 
@@ -123,7 +123,7 @@
   --info: 212 92% 62%;
   --info-foreground: 222 47% 11%;
   --warning: 40 96% 58%;
-  --warning-foreground: 26 40% 12%;
+  --warning-foreground: 0 0% 100%;
   --error: 4 84% 62%;
   --error-foreground: 0 0% 100%;
 
