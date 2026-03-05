@@ -5,11 +5,14 @@ import { Slot } from "radix-ui"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        gold: "bg-gradient-to-b from-[hsl(var(--gold-1))] to-[hsl(var(--gold-3))] text-[hsl(var(--gold-foreground))] shadow-none hover:via-[hsl(var(--gold-2))] hover:shadow-[inset_0_1px_0_hsl(0_0%_100%_/_0.35),_0_10px_20px_hsl(var(--gold-3)_/_0.35)] hover:brightness-105 focus-visible:ring-[3px] focus-visible:ring-[hsl(var(--gold-2)_/_0.4)]",
+        accept:
+          "bg-gradient-to-b from-[hsl(145_72%_54%)] via-[hsl(148_66%_44%)] to-[hsl(151_62%_34%)] text-white shadow-none hover:shadow-[inset_0_1px_0_hsl(0_0%_100%_/_0.28),_0_10px_20px_hsl(151_62%_20%_/_0.35)] hover:brightness-105 focus-visible:ring-[3px] focus-visible:ring-[hsl(148_66%_44%_/_0.4)]",
         destructive:
           "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
         outline:

@@ -281,7 +281,7 @@ export function StyleguideSearch() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="flex h-10 w-full items-center gap-2 rounded-md border bg-background px-3 text-sm text-muted-foreground transition-colors hover:border-ring hover:text-foreground"
+        className="flex h-10 w-full cursor-pointer items-center gap-2 rounded-md border bg-background px-3 text-sm text-muted-foreground transition-colors hover:border-ring hover:text-foreground"
       >
         <Search className="size-4 shrink-0" />
         <span className="flex-1 text-left">Search documentation...</span>
@@ -301,7 +301,7 @@ export function StyleguideSearch() {
         ref={backdropRef}
         type="button"
         aria-label="Close search"
-        className="fixed inset-0 z-100 cursor-default bg-black/50"
+        className="fixed inset-0 z-100 cursor-pointer bg-black/50"
         onClick={close}
         onKeyDown={onModalKeyDown}
       />
@@ -331,7 +331,7 @@ export function StyleguideSearch() {
             <button
               type="button"
               onClick={close}
-              className="rounded border px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className="cursor-pointer rounded border px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
               Esc
             </button>
@@ -351,7 +351,7 @@ export function StyleguideSearch() {
                       onClick={() => goTo(item.href)}
                       onMouseEnter={() => setActiveIdx(idx)}
                       data-active={idx === activeIdx || undefined}
-                      className="group flex w-full items-start gap-3 rounded-md px-3 py-2.5 text-left text-foreground transition-colors data-active:bg-primary data-active:text-primary-foreground"
+                      className="group flex w-full cursor-pointer items-start gap-3 rounded-md px-3 py-2.5 text-left text-foreground transition-colors data-active:bg-primary data-active:text-primary-foreground"
                     >
                       <ItemIcon type={item.type} />
                       <div className="min-w-0 flex-1">

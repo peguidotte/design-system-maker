@@ -39,7 +39,7 @@ export default function StyleguideLayout({
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="text-sm text-foreground/80 transition-colors hover:text-primary"
+                        className="cursor-pointer text-sm text-foreground/80 transition-colors hover:text-primary"
                       >
                         {item.title}
                       </Link>

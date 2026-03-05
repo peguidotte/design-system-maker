@@ -20,6 +20,10 @@ const semanticBaseTokens = [
   "--secondary-foreground",
   "--accent",
   "--accent-foreground",
+  "--gold-1",
+  "--gold-2",
+  "--gold-3",
+  "--gold-foreground",
   "--muted",
   "--muted-foreground",
   "--destructive",
@@ -234,6 +238,8 @@ export default function StyleguidePage() {
           <Card>
             <CardContent className="flex flex-wrap gap-3 p-6">
               <Button>Primary</Button>
+              <Button variant="gold">Gold</Button>
+              <Button variant="accept">Accept</Button>
               <Button variant="secondary">Secondary</Button>
               <Button variant="outline">Outline</Button>
               <Button variant="ghost">Ghost</Button>
@@ -247,12 +253,7 @@ export default function StyleguidePage() {
           <Card>
             <CardContent className="space-y-4 p-6">
               <div className="flex flex-wrap gap-2">
-                <Badge>Default</Badge>
-                <Badge variant="secondary">Secondary</Badge>
-                <Badge variant="outline">Outline</Badge>
-                <Badge variant="destructive">Destructive</Badge>
-              </div>
-              <div className="flex flex-wrap gap-2">
+                <Badge>Gold</Badge>
                 <Badge className="bg-success text-success-foreground">Success</Badge>
                 <Badge className="bg-info text-info-foreground">Info</Badge>
                 <Badge className="bg-warning text-warning-foreground">Warning</Badge>
